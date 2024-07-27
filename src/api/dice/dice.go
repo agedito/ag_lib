@@ -1,6 +1,9 @@
 package dice
 
-import "math/rand"
+import (
+	"fmt"
+	"math/rand"
+)
 
 type Dice struct {
 	number int8
@@ -20,4 +23,8 @@ func (d *Dice) Launch() int8 {
 
 func (d *Dice) Value() int8 {
 	return d.number
+}
+
+func (d *Dice) String() string {
+	return fmt.Sprintf("Dice (%d)", d.number)
 }
