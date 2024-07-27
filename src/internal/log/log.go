@@ -3,5 +3,5 @@ package log
 import "fmt"
 
 func Hi() {
-	fmt.Println("Hola carabola")
+	fmt.Println("Hi from inside")
 }
